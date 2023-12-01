@@ -12,4 +12,5 @@ RUN apt update \
       bash-completion \
       build-essential \
       git \
+      rsync \
     && rm -rf /var/lib/apt/lists/* \
