@@ -19,6 +19,7 @@ RUN apt update \
       rsync \
       kafkacat \
       openjdk-17-jdk-headless \
+      nmap \
     && rm -rf /var/lib/apt/lists/*
 RUN \
     mkdir -p /root/.confluent \
