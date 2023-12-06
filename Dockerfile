@@ -16,6 +16,7 @@ RUN apt update \
       bash-completion \
       build-essential \
       git \
+      rsync \
       kafkacat \
       openjdk-17-jdk-headless \
     && rm -rf /var/lib/apt/lists/*
@@ -27,5 +28,4 @@ RUN \
     && ln -s /usr/local/confluent-${CONFLUENT_FULL_VERSION} ${CONFLUENT_SYMLINK} \
     && curl -sL --http1.1 https://cnfl.io/cli | sh -s -- latest \
     && echo '{"disable_updates": true, "disable_plugins": true}' > /root/.confluent/config.json
-
 
