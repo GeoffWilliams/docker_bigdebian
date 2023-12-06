@@ -20,6 +20,7 @@ RUN apt update \
       kafkacat \
       openjdk-17-jdk-headless \
       nmap \
+      iperf3 \
     && rm -rf /var/lib/apt/lists/*
 RUN \
     mkdir -p /root/.confluent \
