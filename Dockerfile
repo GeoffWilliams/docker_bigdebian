@@ -21,6 +21,11 @@ RUN apt update \
       openjdk-17-jdk-headless \
       nmap \
       iperf3 \
+      iproute2 \
+      traceroute \
+      tcptraceroute \
+      procps \
+      bmon \
     && rm -rf /var/lib/apt/lists/*
 RUN \
     mkdir -p /root/.confluent \
