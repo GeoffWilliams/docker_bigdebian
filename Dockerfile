@@ -26,6 +26,7 @@ RUN apt update \
       tcptraceroute \
       procps \
       bmon \
+      jq \
     && rm -rf /var/lib/apt/lists/*
 RUN \
     mkdir -p /root/.confluent \
