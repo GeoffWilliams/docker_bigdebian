@@ -27,6 +27,7 @@ RUN apt update \
       procps \
       bmon \
       jq \
+      iputils-ping \
     && rm -rf /var/lib/apt/lists/*
 RUN \
     mkdir -p /root/.confluent \
